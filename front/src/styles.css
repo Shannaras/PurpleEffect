@@ -4,6 +4,49 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    color: white; 
+.page-card{
+    @apply p-10;
+    @apply m-60;
+    @apply mt-20;
+    @apply mb-0;
+
+    @apply bg-white;
+    @apply text-purple-950;
+}
+
+body {
+    @apply text-white; 
+}
+
+@layer base{
+    h1 {
+        @apply text-3xl;
+        @apply font-bold;
+        @apply mt-5;
+        @apply mb-3;
+        @apply block;
+        @apply text-center;
+    }
+    
+    h2 {
+        @apply text-2xl;
+        @apply font-bold;
+        @apply mt-6;
+        @apply mb-4;
+        @apply block;
+    }    
+    
+    h3 {
+        @apply text-xl;
+        @apply font-bold;
+        @apply mt-7;
+        @apply mb-5;   
+        @apply block;     
+    }
+    
+    ul {
+        @apply list-disc;
+        @apply list-inside;
+        @apply m-4;
+    }
 }
