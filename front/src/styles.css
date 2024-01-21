@@ -5,12 +5,14 @@
 @tailwind utilities;
 
 .page-card{
-    @apply p-10;
-    @apply m-60;
+    @apply w-10/12;
+    @apply p-3;
+    @apply mx-auto;
     @apply mt-20;
     @apply mb-0;
+    @apply rounded-xl;
 
-    @apply bg-white;
+    @apply bg-purple-100;
     @apply text-purple-950;
 }
 

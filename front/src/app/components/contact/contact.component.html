@@ -1,1 +1,51 @@
-<p>contact works!</p>
+<div class="page-card overflow-hidden lg:p-10 lg:w-8/12">
+    <div>
+        <h1>Nous contacter</h1>
+        <h2>Besoin de Purple Effect à ton événement ?</h2>
+        <p>Tu organises des événements ? Une soirée ? Un festival ? Dans Lyon et ses alentours ?</p>
+        <p>Remplis le formulaire pour spécifier tes besoins, puis nous reviendrons vers toi au plus vite pour échanger et adapter les dispositifs au mieux à l'événement.</p>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-center py-5 px-3 lg:px-10">    
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit" class="grid grid-rows-1 gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div >
+                    <label for="copainDeLaNuit"> Copain de la nuit </label>
+                    <input type="checkbox" name="copainDeLaNuit" placeholder="Copain de la nuit" formControlName="copainDeLaNuit">
+                </div>
+                <div >
+                    <label for="rdr"> RDR </label>
+                    <input type="checkbox" name="RDR" placeholder="RDR" formControlName="rdr">
+                </div>
+                <div >
+                    <label for="safeZone"> Safe zone </label>
+                    <input type="checkbox" name="safeZone" placeholder="Safe zone" formControlName="safeZone">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div>
+                    <label for="email"> Email </label>
+                    <input type="text" name="email" placeholder="exemple@email.com" formControlName="email" class="rounded-xl bg-purple-200 py-1 px-2">
+                </div>  
+                <div>
+                    <label for="nomEvent"> Nom de l'événement </label>
+                    <input type="text" name="nomEvent" placeholder="" formControlName="nomEvent" class="rounded-xl bg-purple-200 py-1 px-2">
+                </div>
+                <div>
+                    <label for="typeEvent"> Type d'événement </label>
+                    <input type="text" name="typeEvent" placeholder="" formControlName="typeEvent" class="rounded-xl bg-purple-200 py-1 px-2">
+                </div>   
+                <div>
+                    <label for="lieu"> Lieu </label>
+                    <input type="text" name="lieu" placeholder="" formControlName="lieu" class="rounded-xl bg-purple-200 py-1 px-2">
+                </div>           
+                <div>
+                    <label for="jauge"> Jauge </label>
+                    <input type="text" name="jauge" placeholder="" formControlName="jauge" class="rounded-xl bg-purple-200 py-1 px-2">
+                </div>                              
+            </div>
+            <div class="mx-auto mt-5">               
+                <button class="w-full py-2 px-2 text-center bg-purple-950 text-purple-100 rounded-2xl" type="submit"> Envoyer la demande </button>            
+            </div>
+        </form>            
+    </div>
+</div>
